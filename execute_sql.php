@@ -7,5 +7,5 @@ echo "<h3>$query</h3><br>";
 require 'table.php';
 display_table($db, $query);
 
-file_put_contents("history.sql", $query."\n", FILE_APPEND | LOCK_EX);
+file_put_contents("history.txt", $query."\n", FILE_APPEND | LOCK_EX);
 ?>
